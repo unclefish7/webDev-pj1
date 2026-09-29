@@ -1,0 +1,2276 @@
+[
+  {
+    "method": "GET",
+    "path": "/api/health",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "status": "ok",
+      "database": "connected"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/stats",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "vulnerabilities": 1001,
+      "components": 398,
+      "highRisk": 507,
+      "operations": 0,
+      "severity": [
+        {
+          "label": "HIGH",
+          "count": 448
+        },
+        {
+          "label": "MEDIUM",
+          "count": 389
+        },
+        {
+          "label": "LOW",
+          "count": 105
+        },
+        {
+          "label": "CRITICAL",
+          "count": 59
+        }
+      ],
+      "ecosystems": [
+        {
+          "label": "github",
+          "count": 268
+        },
+        {
+          "label": "unknown",
+          "count": 107
+        },
+        {
+          "label": "generic",
+          "count": 8
+        },
+        {
+          "label": "composer",
+          "count": 6
+        },
+        {
+          "label": "npm",
+          "count": 5
+        },
+        {
+          "label": "cargo",
+          "count": 3
+        },
+        {
+          "label": "packagist",
+          "count": 1
+        }
+      ],
+      "recent": [
+        {
+          "id": 815,
+          "cve_id": "CVE-2026-49842",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "HIGH",
+          "source_publish_date": "2026-06-09 17:17:48"
+        },
+        {
+          "id": 814,
+          "cve_id": "CVE-2026-49843",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "MEDIUM",
+          "source_publish_date": "2026-06-09 17:17:48"
+        },
+        {
+          "id": 813,
+          "cve_id": "CVE-2026-49847",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "HIGH",
+          "source_publish_date": "2026-06-09 17:17:48"
+        },
+        {
+          "id": 812,
+          "cve_id": "CVE-2026-49848",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "MEDIUM",
+          "source_publish_date": "2026-06-09 17:17:48"
+        },
+        {
+          "id": 819,
+          "cve_id": "CVE-2026-49472",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "MEDIUM",
+          "source_publish_date": "2026-06-09 17:17:47"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/vulnerabilities",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "items": [
+        {
+          "id": 1000,
+          "cve_id": "CVE-2026-45104",
+          "title": null,
+          "description": "MapServer is a system for developing web-based GIS applications. From 6.4.0 to before 8.6.3, msSLDParseUserStyle always calls _SLDApplyRuleValues(psRule, psLayer, 1); for any <Rule> carrying <ElseFilt",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 7.5,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-27 20:16:38",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 996,
+          "cve_id": "CVE-2026-45206",
+          "title": null,
+          "description": "An origin validation vulnerability in the Apex One/SEP agent could allow a local attacker to escalate privileges on affected installations. This is similar to CVE-2026-45207 but exists in a different ",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 7.800000190734863,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-21 14:16:47",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 995,
+          "cve_id": "CVE-2026-45207",
+          "title": null,
+          "description": "An origin validation vulnerability in the Apex One/SEP agent could allow a local attacker to escalate privileges on affected installations. This is similar to CVE-2026-45206 but exists in a different ",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 7.800000190734863,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-21 14:16:48",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 994,
+          "cve_id": "CVE-2026-45208",
+          "title": null,
+          "description": "A time-of-check time-of-use vulnerability in the Apex One/SEP agent could allow a local attacker to escalate privileges on affected installations.\n\nPlease note: an attacker must first obtain the abili",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 7.800000190734863,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-21 14:16:48",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 992,
+          "cve_id": "CVE-2026-4525",
+          "title": null,
+          "description": "If a Vault auth mount is configured to pass through the \"Authorization\" header, and the \"Authorization\" header is used to authenticate to Vault, Vault forwarded the Vault token to the auth plugin back",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 7.5,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-04-17 04:16:09",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 976,
+          "cve_id": "CVE-2026-45495",
+          "title": null,
+          "description": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 8.800000190734863,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-18 18:17:38",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 975,
+          "cve_id": "CVE-2026-45578",
+          "title": null,
+          "description": "WWBN AVideo is an open source video platform. In 29.0 and earlier, there is a classic shell-metacharacter injection. The YPTSocket notification branch in plugin/Live/on_publish.php builds an execAsync",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 8.800000190734863,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-29 14:16:30",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 973,
+          "cve_id": "CVE-2026-45584",
+          "title": null,
+          "description": "Heap-based buffer overflow in Microsoft Defender allows an unauthorized attacker to execute code over a network.",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 8.100000381469727,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-20 13:16:37",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 969,
+          "cve_id": "CVE-2026-45659",
+          "title": null,
+          "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 8.800000190734863,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-22 23:16:56",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 968,
+          "cve_id": "CVE-2026-45700",
+          "title": null,
+          "description": "FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to 3.26.0, FreeRDP's planar bitmap decoder has an out-of-bounds heap write when decoding RLE planar data. In libfreerdp/codec/pla",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 9.800000190734863,
+          "cvss_score_v4": 7.699999809265137,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-29 20:16:27",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 964,
+          "cve_id": "CVE-2026-45771",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software implementation that runs on any commodity hardware. Prior to version ",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 7.5,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-06-09 17:17:33",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 961,
+          "cve_id": "CVE-2026-45778",
+          "title": null,
+          "description": "OpenXDMoD is an open framework for collecting and analyzing HPC metrics. Prior to version 11.0.3, an authenticated attacker can inject malicious JavaScript into their Open XDMoD user profile and abuse",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 5.400000095367432,
+          "cvss_score_v4": 8.600000381469727,
+          "source_name": "NVD",
+          "source_publish_date": "2026-06-05 20:17:32",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 957,
+          "cve_id": "CVE-2026-46490",
+          "title": null,
+          "description": "samlify is a Node.js library for SAML single sign-on. Prior to version 2.13.0, samlify’s template substitution only escapes attribute contexts. Values inserted into element text (e.g., <saml:Attribute",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 8.800000190734863,
+          "cvss_score_v4": 8.699999809265137,
+          "source_name": "NVD",
+          "source_publish_date": "2026-06-08 19:16:45",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 956,
+          "cve_id": "CVE-2026-46579",
+          "title": null,
+          "description": "A flaw was found in the OpenShift Router. When a Route has `insecureEdgeTerminationPolicy` set to Allow, the HTTP frontend does not remove `X-SSL-Client-*` headers from incoming requests. This allows ",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 7.400000095367432,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-29 11:16:17",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 955,
+          "cve_id": "CVE-2026-46586",
+          "title": null,
+          "description": "Improper Control of Generation of Code ('Code Injection'), Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection') vulnerability in Apache OFBiz.\n\nThis issue affects Apa",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 8.800000190734863,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-19 10:16:24",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 953,
+          "cve_id": "CVE-2026-46597",
+          "title": null,
+          "description": "An incorrectly placed cast from bytes to int allowed for server-side panic in the AES-GCM packet decoder for well-crafted inputs.",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 7.5,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-22 04:16:26",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 950,
+          "cve_id": "CVE-2026-46727",
+          "title": null,
+          "description": "An issue was discovered in Ruby 4 before 4.0.5. A race condition leading to a use-after-free in the pthread-based getaddrinfo timeout handler (rb_getaddrinfo in ext/socket/raddrinfo.c) allows a remote",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 8.100000381469727,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-22 18:16:22",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 948,
+          "cve_id": "CVE-2026-46818",
+          "title": null,
+          "description": "Vulnerability in the Oracle Payments product of Oracle E-Business Suite (component: File Transmission).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability all",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 7.400000095367432,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-28 21:16:31",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 946,
+          "cve_id": "CVE-2026-46820",
+          "title": null,
+          "description": "Vulnerability in the Oracle Financials Common Modules product of Oracle E-Business Suite (component: Common Components).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vu",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 8.5,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-28 21:16:31",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 945,
+          "cve_id": "CVE-2026-46821",
+          "title": null,
+          "description": "Vulnerability in the Oracle Financials Common Modules product of Oracle E-Business Suite (component: Common Components).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vu",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 7.699999809265137,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-28 21:16:32",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        }
+      ],
+      "total": 448,
+      "page": 1,
+      "pageSize": 20
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/stats",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "vulnerabilities": 1001,
+      "components": 398,
+      "highRisk": 507,
+      "operations": 0,
+      "severity": [
+        {
+          "label": "HIGH",
+          "count": 448
+        },
+        {
+          "label": "MEDIUM",
+          "count": 389
+        },
+        {
+          "label": "LOW",
+          "count": 105
+        },
+        {
+          "label": "CRITICAL",
+          "count": 59
+        }
+      ],
+      "ecosystems": [
+        {
+          "label": "github",
+          "count": 268
+        },
+        {
+          "label": "unknown",
+          "count": 107
+        },
+        {
+          "label": "generic",
+          "count": 8
+        },
+        {
+          "label": "composer",
+          "count": 6
+        },
+        {
+          "label": "npm",
+          "count": 5
+        },
+        {
+          "label": "cargo",
+          "count": 3
+        },
+        {
+          "label": "packagist",
+          "count": 1
+        }
+      ],
+      "recent": [
+        {
+          "id": 815,
+          "cve_id": "CVE-2026-49842",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "HIGH",
+          "source_publish_date": "2026-06-09 17:17:48"
+        },
+        {
+          "id": 814,
+          "cve_id": "CVE-2026-49843",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "MEDIUM",
+          "source_publish_date": "2026-06-09 17:17:48"
+        },
+        {
+          "id": 813,
+          "cve_id": "CVE-2026-49847",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "HIGH",
+          "source_publish_date": "2026-06-09 17:17:48"
+        },
+        {
+          "id": 812,
+          "cve_id": "CVE-2026-49848",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "MEDIUM",
+          "source_publish_date": "2026-06-09 17:17:48"
+        },
+        {
+          "id": 819,
+          "cve_id": "CVE-2026-49472",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "MEDIUM",
+          "source_publish_date": "2026-06-09 17:17:47"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/health",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "status": "ok",
+      "database": "connected"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/vulnerabilities",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "items": [
+        {
+          "id": 1029,
+          "cve_id": "CVE-2099-1790662538045",
+          "title": "用于录屏的独立 CVE 记录",
+          "description": "演示专用漏洞记录，展示真实数据库更新；教师原始记录不被修改。",
+          "severity": "MEDIUM",
+          "cvss_score_v2": null,
+          "cvss_score_v3": null,
+          "cvss_score_v4": null,
+          "source_name": null,
+          "source_publish_date": null,
+          "revision": 1,
+          "updated_at": "2026-09-29 06:15:38"
+        },
+        {
+          "id": 1000,
+          "cve_id": "CVE-2026-45104",
+          "title": null,
+          "description": "MapServer is a system for developing web-based GIS applications. From 6.4.0 to before 8.6.3, msSLDParseUserStyle always calls _SLDApplyRuleValues(psRule, psLayer, 1); for any <Rule> carrying <ElseFilt",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 7.5,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-27 20:16:38",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 999,
+          "cve_id": "CVE-2026-45185",
+          "title": null,
+          "description": "Exim before 4.99.3, in certain GnuTLS configurations, has a remotely reachable use-after-free in the BDAT body parsing path. It is triggered when a client sends a TLS close_notify mid-body during a CH",
+          "severity": "CRITICAL",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 9.800000190734863,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-12 20:16:46",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 998,
+          "cve_id": "CVE-2026-45186",
+          "title": null,
+          "description": "In libexpat before 2.8.1, the computational complexity of attribute name collision checks allows a denial of service via moderately sized crafted XML input.",
+          "severity": "LOW",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 2.9000000953674316,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-10 07:16:07",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 997,
+          "cve_id": "CVE-2026-45187",
+          "title": null,
+          "description": "Improper Authorization vulnerability in Apache OFBiz Webtools.\n\nThis issue affects Apache OFBiz: before 24.09.06.\n\nUsers are recommended to upgrade to version 24.09.06, which fixes the issue.",
+          "severity": "MEDIUM",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 6.5,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-19 10:16:24",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 996,
+          "cve_id": "CVE-2026-45206",
+          "title": null,
+          "description": "An origin validation vulnerability in the Apex One/SEP agent could allow a local attacker to escalate privileges on affected installations. This is similar to CVE-2026-45207 but exists in a different ",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 7.800000190734863,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-21 14:16:47",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 995,
+          "cve_id": "CVE-2026-45207",
+          "title": null,
+          "description": "An origin validation vulnerability in the Apex One/SEP agent could allow a local attacker to escalate privileges on affected installations. This is similar to CVE-2026-45206 but exists in a different ",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 7.800000190734863,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-21 14:16:48",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 994,
+          "cve_id": "CVE-2026-45208",
+          "title": null,
+          "description": "A time-of-check time-of-use vulnerability in the Apex One/SEP agent could allow a local attacker to escalate privileges on affected installations.\n\nPlease note: an attacker must first obtain the abili",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 7.800000190734863,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-21 14:16:48",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 993,
+          "cve_id": "CVE-2026-45232",
+          "title": null,
+          "description": "Rsync versions before 3.4.3 contain an off-by-one out-of-bounds stack write vulnerability in the establish_proxy_connection() function in socket.c that allows network attackers to corrupt stack memory",
+          "severity": "LOW",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 3.0999999046325684,
+          "cvss_score_v4": 2.0999999046325684,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-20 02:16:36",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 992,
+          "cve_id": "CVE-2026-4525",
+          "title": null,
+          "description": "If a Vault auth mount is configured to pass through the \"Authorization\" header, and the \"Authorization\" header is used to authenticate to Vault, Vault forwarded the Vault token to the auth plugin back",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 7.5,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-04-17 04:16:09",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 991,
+          "cve_id": "CVE-2026-45278",
+          "title": null,
+          "description": "Nextcloud is an open source content collaboration platform. From version 6.1.0 to before version 8.2.2, an attacker can craft links that would redirect users to another website, when the victim uses t",
+          "severity": "LOW",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 3.299999952316284,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-06-01 19:16:49",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 990,
+          "cve_id": "CVE-2026-45284",
+          "title": null,
+          "description": "Nextcloud is an open source content collaboration platform. From version 1.3.6 to before version 8.4.0, an improper check allowed users that where provided by LDAP to still authenticate towards user O",
+          "severity": "MEDIUM",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 4.599999904632568,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-06-01 19:16:50",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 989,
+          "cve_id": "CVE-2026-45286",
+          "title": null,
+          "description": "Nextcloud is an open source content collaboration platform. From versions 5.5.13 to before 5.5.17, and 6.2.0 to before 6.2.3, an authenticated user can enumerate users on the same Nextcloud instance b",
+          "severity": "MEDIUM",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 4.300000190734863,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-06-01 19:16:50",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 988,
+          "cve_id": "CVE-2026-45403",
+          "title": null,
+          "description": "AnythingLLM is an application that turns pieces of content into context that any LLM can use as references during chatting. Prior to 1.13.0, the AnythingLLM agent filesystem copy tool validates only t",
+          "severity": "LOW",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 2,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-28 22:17:00",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 987,
+          "cve_id": "CVE-2026-45411",
+          "title": null,
+          "description": "vm2 is an open source vm/sandbox for Node.js. Prior to 3.11.3, it is possible to catch a host exception using the yield* expression inside an async generator. When the generator is closed using the re",
+          "severity": "CRITICAL",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 9.800000190734863,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-13 18:16:19",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 986,
+          "cve_id": "CVE-2026-45434",
+          "title": null,
+          "description": "Improper Authentication vulnerability in Apache OFBiz via Password-Change Logic Flaw Leading to Remote Code Execution\n\nThis issue affects Apache OFBiz: before 24.09.06.\n\nUsers are recommended to upgra",
+          "severity": "CRITICAL",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 9.800000190734863,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-19 10:16:24",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 985,
+          "cve_id": "CVE-2026-45453",
+          "title": null,
+          "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network.",
+          "severity": "MEDIUM",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 5.400000095367432,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-06-09 17:17:19",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 984,
+          "cve_id": "CVE-2026-45454",
+          "title": null,
+          "description": "Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+          "severity": "MEDIUM",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 6.5,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-06-09 17:17:19",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 983,
+          "cve_id": "CVE-2026-45462",
+          "title": null,
+          "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network.",
+          "severity": "MEDIUM",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 4.599999904632568,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-06-09 17:17:20",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 982,
+          "cve_id": "CVE-2026-45464",
+          "title": null,
+          "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Office SharePoint allows an authorized attacker to perform spoofing over a network.",
+          "severity": "MEDIUM",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 5.400000095367432,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-06-09 17:17:20",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        }
+      ],
+      "total": 1001,
+      "page": 1,
+      "pageSize": 20
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/vulnerabilities",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "items": [
+        {
+          "id": 1,
+          "cve_id": "CVE-2026-9999",
+          "title": null,
+          "description": "Inappropriate implementation in ANGLE in Google Chrome on Mac prior to 148.0.7778.216 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security s",
+          "severity": "HIGH",
+          "cvss_score_v2": null,
+          "cvss_score_v3": 8.800000190734863,
+          "cvss_score_v4": null,
+          "source_name": "NVD",
+          "source_publish_date": "2026-05-28 23:16:58",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        }
+      ],
+      "total": 1,
+      "page": 1,
+      "pageSize": 20
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/vulnerabilities/1",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "id": 1,
+      "source_id": "CVE-2026-9999",
+      "source_name": "NVD",
+      "source_publish_date": "2026-05-28 23:16:58",
+      "source_update_date": "2026-06-01 18:14:19",
+      "source_link": "https://nvd.nist.gov/vuln/detail/CVE-2026-9999",
+      "affected_version": [
+        "cpe:2.3:a:google:chrome:*:*:*:*:*:*:*:*"
+      ],
+      "cvss_score_v4": null,
+      "cvss_score_v3": 8.800000190734863,
+      "cvss_score_v2": null,
+      "severity": "HIGH",
+      "type": null,
+      "cwe_id": [
+        "CWE-269"
+      ],
+      "description": "Inappropriate implementation in ANGLE in Google Chrome on Mac prior to 148.0.7778.216 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "cve_id": "CVE-2026-9999",
+      "title": null,
+      "revision": 1,
+      "created_at": "2026-09-29 05:45:24",
+      "updated_at": "2026-09-29 05:45:24"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/vulnerabilities",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "items": [
+        {
+          "id": 1029,
+          "cve_id": "CVE-2099-1790662538045",
+          "title": "用于录屏的独立 CVE 记录",
+          "description": "演示专用漏洞记录，展示真实数据库更新；教师原始记录不被修改。",
+          "severity": "MEDIUM",
+          "cvss_score_v2": null,
+          "cvss_score_v3": null,
+          "cvss_score_v4": null,
+          "source_name": null,
+          "source_publish_date": null,
+          "revision": 1,
+          "updated_at": "2026-09-29 06:15:38"
+        }
+      ],
+      "total": 1,
+      "page": 1,
+      "pageSize": 20
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/vulnerabilities/1029",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "id": 1029,
+      "source_id": null,
+      "source_name": null,
+      "source_publish_date": null,
+      "source_update_date": null,
+      "source_link": null,
+      "affected_version": [
+        "cpe:example"
+      ],
+      "cvss_score_v4": null,
+      "cvss_score_v3": null,
+      "cvss_score_v2": null,
+      "severity": "MEDIUM",
+      "type": null,
+      "cwe_id": [
+        "CWE-79"
+      ],
+      "description": "演示专用漏洞记录，展示真实数据库更新；教师原始记录不被修改。",
+      "cve_id": "CVE-2099-1790662538045",
+      "title": "用于录屏的独立 CVE 记录",
+      "revision": 1,
+      "created_at": "2026-09-29 06:15:38",
+      "updated_at": "2026-09-29 06:15:38"
+    }
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/vulnerabilities/1029",
+    "status": 200,
+    "requestBody": "{\"title\":\"录屏验证：漏洞标题已持久化更新\",\"description\":\"演示专用漏洞记录，展示真实数据库更新；教师原始记录不被修改。\",\"severity\":\"MEDIUM\",\"cvss_score_v4\":null,\"cvss_score_v3\":null,\"cvss_score_v2\":null,\"affected_version\":[\"cpe:example\"],\"cwe_id\":[\"CWE-79\",\"CWE-89\"],\"type\":null,\"source_name\":null,\"source_id\":null,\"source_link\":null,\"source_publish_date\":null,\"source_update_date\":null,\"revision\":1}",
+    "response": {
+      "id": 1029,
+      "source_id": null,
+      "source_name": null,
+      "source_publish_date": null,
+      "source_update_date": null,
+      "source_link": null,
+      "affected_version": [
+        "cpe:example"
+      ],
+      "cvss_score_v4": null,
+      "cvss_score_v3": null,
+      "cvss_score_v2": null,
+      "severity": "MEDIUM",
+      "type": null,
+      "cwe_id": [
+        "CWE-79",
+        "CWE-89"
+      ],
+      "description": "演示专用漏洞记录，展示真实数据库更新；教师原始记录不被修改。",
+      "cve_id": "CVE-2099-1790662538045",
+      "title": "录屏验证：漏洞标题已持久化更新",
+      "revision": 2,
+      "created_at": "2026-09-29 06:15:38",
+      "updated_at": "2026-09-29 06:17:03"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/vulnerabilities",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "items": [
+        {
+          "id": 1029,
+          "cve_id": "CVE-2099-1790662538045",
+          "title": "录屏验证：漏洞标题已持久化更新",
+          "description": "演示专用漏洞记录，展示真实数据库更新；教师原始记录不被修改。",
+          "severity": "MEDIUM",
+          "cvss_score_v2": null,
+          "cvss_score_v3": null,
+          "cvss_score_v4": null,
+          "source_name": null,
+          "source_publish_date": null,
+          "revision": 2,
+          "updated_at": "2026-09-29 06:17:03"
+        }
+      ],
+      "total": 1,
+      "page": 1,
+      "pageSize": 20
+    }
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/vulnerabilities/1029",
+    "status": 204,
+    "requestBody": null,
+    "response": null
+  },
+  {
+    "method": "GET",
+    "path": "/api/vulnerabilities",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "items": [],
+      "total": 0,
+      "page": 1,
+      "pageSize": 20
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/health",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "status": "ok",
+      "database": "connected"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/health",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "status": "ok",
+      "database": "connected"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/components",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "items": [
+        {
+          "id": 398,
+          "purl": "pkg:xmlsoft/libxml2",
+          "name": "libxml2",
+          "version": "",
+          "type": "",
+          "vendor": "xmlsoft",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 397,
+          "purl": "pkg:x.org/x_server",
+          "name": "x_server",
+          "version": "",
+          "type": "",
+          "vendor": "x.org",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 396,
+          "purl": "pkg:wwbn/avideo",
+          "name": "avideo",
+          "version": "",
+          "type": "",
+          "vendor": "wwbn",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 395,
+          "purl": "pkg:wireshark/wireshark",
+          "name": "wireshark",
+          "version": "",
+          "type": "",
+          "vendor": "wireshark",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 394,
+          "purl": "pkg:webassembly/binaryen",
+          "name": "binaryen",
+          "version": "",
+          "type": "",
+          "vendor": "webassembly",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 393,
+          "purl": "pkg:university_of_cambridge/exim",
+          "name": "exim",
+          "version": "",
+          "type": "",
+          "vendor": "university_of_cambridge",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 392,
+          "purl": "pkg:typo3/typo3",
+          "name": "typo3",
+          "version": "",
+          "type": "",
+          "vendor": "typo3",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 391,
+          "purl": "pkg:tribe29/checkmk",
+          "name": "checkmk",
+          "version": "",
+          "type": "",
+          "vendor": "tribe29",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 390,
+          "purl": "pkg:trendmicro/apex_one",
+          "name": "apex_one",
+          "version": "",
+          "type": "",
+          "vendor": "trendmicro",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 389,
+          "purl": "pkg:snipeitapp/snipe-it",
+          "name": "snipe-it",
+          "version": "",
+          "type": "",
+          "vendor": "snipeitapp",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 388,
+          "purl": "pkg:smartertools/smartermail",
+          "name": "smartermail",
+          "version": "",
+          "type": "",
+          "vendor": "smartertools",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 387,
+          "purl": "pkg:sangoma/freepbx",
+          "name": "freepbx",
+          "version": "",
+          "type": "",
+          "vendor": "sangoma",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 386,
+          "purl": "pkg:samba/rsync",
+          "name": "rsync",
+          "version": "",
+          "type": "",
+          "vendor": "samba",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 385,
+          "purl": "pkg:sailpoint/identityiq",
+          "name": "identityiq",
+          "version": "",
+          "type": "",
+          "vendor": "sailpoint",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 384,
+          "purl": "pkg:rust-lang/cargo",
+          "name": "cargo",
+          "version": "",
+          "type": "",
+          "vendor": "rust-lang",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 383,
+          "purl": "pkg:redhat/satellite",
+          "name": "satellite",
+          "version": "",
+          "type": "",
+          "vendor": "redhat",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 382,
+          "purl": "pkg:redhat/quay",
+          "name": "quay",
+          "version": "",
+          "type": "",
+          "vendor": "redhat",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 381,
+          "purl": "pkg:redhat/openshift_container_platform",
+          "name": "openshift_container_platform",
+          "version": "",
+          "type": "",
+          "vendor": "redhat",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 380,
+          "purl": "pkg:redhat/directory_server",
+          "name": "directory_server",
+          "version": "",
+          "type": "",
+          "vendor": "redhat",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 379,
+          "purl": "pkg:redhat/389_directory_server",
+          "name": "389_directory_server",
+          "version": "",
+          "type": "",
+          "vendor": "redhat",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        }
+      ],
+      "total": 398,
+      "page": 1,
+      "pageSize": 20
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/stats",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "vulnerabilities": 1000,
+      "components": 398,
+      "highRisk": 507,
+      "operations": 2,
+      "severity": [
+        {
+          "label": "HIGH",
+          "count": 448
+        },
+        {
+          "label": "MEDIUM",
+          "count": 388
+        },
+        {
+          "label": "LOW",
+          "count": 105
+        },
+        {
+          "label": "CRITICAL",
+          "count": 59
+        }
+      ],
+      "ecosystems": [
+        {
+          "label": "github",
+          "count": 268
+        },
+        {
+          "label": "unknown",
+          "count": 107
+        },
+        {
+          "label": "generic",
+          "count": 8
+        },
+        {
+          "label": "composer",
+          "count": 6
+        },
+        {
+          "label": "npm",
+          "count": 5
+        },
+        {
+          "label": "cargo",
+          "count": 3
+        },
+        {
+          "label": "packagist",
+          "count": 1
+        }
+      ],
+      "recent": [
+        {
+          "id": 815,
+          "cve_id": "CVE-2026-49842",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "HIGH",
+          "source_publish_date": "2026-06-09 17:17:48"
+        },
+        {
+          "id": 814,
+          "cve_id": "CVE-2026-49843",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "MEDIUM",
+          "source_publish_date": "2026-06-09 17:17:48"
+        },
+        {
+          "id": 813,
+          "cve_id": "CVE-2026-49847",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "HIGH",
+          "source_publish_date": "2026-06-09 17:17:48"
+        },
+        {
+          "id": 812,
+          "cve_id": "CVE-2026-49848",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "MEDIUM",
+          "source_publish_date": "2026-06-09 17:17:48"
+        },
+        {
+          "id": 819,
+          "cve_id": "CVE-2026-49472",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "MEDIUM",
+          "source_publish_date": "2026-06-09 17:17:47"
+        }
+      ]
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/api/components",
+    "status": 201,
+    "requestBody": "{\"purl\":\"pkg:maven/org.example/demo-2ea8c8db@1.0.0\",\"name\":\"demo-2ea8c8db\",\"version\":\"1.0.0\",\"type\":\"maven\",\"vendor\":\"org.example\",\"license\":null,\"description\":\"录屏创建的 Maven 组件\",\"repository\":null,\"language\":null,\"cpe\":null,\"publish_date\":null,\"record_time\":null}",
+    "response": {
+      "id": 520,
+      "purl": "pkg:maven/org.example/demo-2ea8c8db@1.0.0",
+      "cpe": null,
+      "type": "maven",
+      "vendor": "org.example",
+      "name": "demo-2ea8c8db",
+      "version": "1.0.0",
+      "license": null,
+      "description": "录屏创建的 Maven 组件",
+      "repository": null,
+      "publish_date": null,
+      "language": null,
+      "record_time": null,
+      "revision": 1,
+      "created_at": "2026-09-29 06:18:13",
+      "updated_at": "2026-09-29 06:18:13"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/components",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "items": [
+        {
+          "id": 520,
+          "purl": "pkg:maven/org.example/demo-2ea8c8db@1.0.0",
+          "name": "demo-2ea8c8db",
+          "version": "1.0.0",
+          "type": "maven",
+          "vendor": "org.example",
+          "license": null,
+          "revision": 1,
+          "updated_at": "2026-09-29 06:18:13"
+        },
+        {
+          "id": 398,
+          "purl": "pkg:xmlsoft/libxml2",
+          "name": "libxml2",
+          "version": "",
+          "type": "",
+          "vendor": "xmlsoft",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 397,
+          "purl": "pkg:x.org/x_server",
+          "name": "x_server",
+          "version": "",
+          "type": "",
+          "vendor": "x.org",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 396,
+          "purl": "pkg:wwbn/avideo",
+          "name": "avideo",
+          "version": "",
+          "type": "",
+          "vendor": "wwbn",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 395,
+          "purl": "pkg:wireshark/wireshark",
+          "name": "wireshark",
+          "version": "",
+          "type": "",
+          "vendor": "wireshark",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 394,
+          "purl": "pkg:webassembly/binaryen",
+          "name": "binaryen",
+          "version": "",
+          "type": "",
+          "vendor": "webassembly",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 393,
+          "purl": "pkg:university_of_cambridge/exim",
+          "name": "exim",
+          "version": "",
+          "type": "",
+          "vendor": "university_of_cambridge",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 392,
+          "purl": "pkg:typo3/typo3",
+          "name": "typo3",
+          "version": "",
+          "type": "",
+          "vendor": "typo3",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 391,
+          "purl": "pkg:tribe29/checkmk",
+          "name": "checkmk",
+          "version": "",
+          "type": "",
+          "vendor": "tribe29",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 390,
+          "purl": "pkg:trendmicro/apex_one",
+          "name": "apex_one",
+          "version": "",
+          "type": "",
+          "vendor": "trendmicro",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 389,
+          "purl": "pkg:snipeitapp/snipe-it",
+          "name": "snipe-it",
+          "version": "",
+          "type": "",
+          "vendor": "snipeitapp",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 388,
+          "purl": "pkg:smartertools/smartermail",
+          "name": "smartermail",
+          "version": "",
+          "type": "",
+          "vendor": "smartertools",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 387,
+          "purl": "pkg:sangoma/freepbx",
+          "name": "freepbx",
+          "version": "",
+          "type": "",
+          "vendor": "sangoma",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 386,
+          "purl": "pkg:samba/rsync",
+          "name": "rsync",
+          "version": "",
+          "type": "",
+          "vendor": "samba",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 385,
+          "purl": "pkg:sailpoint/identityiq",
+          "name": "identityiq",
+          "version": "",
+          "type": "",
+          "vendor": "sailpoint",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 384,
+          "purl": "pkg:rust-lang/cargo",
+          "name": "cargo",
+          "version": "",
+          "type": "",
+          "vendor": "rust-lang",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 383,
+          "purl": "pkg:redhat/satellite",
+          "name": "satellite",
+          "version": "",
+          "type": "",
+          "vendor": "redhat",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 382,
+          "purl": "pkg:redhat/quay",
+          "name": "quay",
+          "version": "",
+          "type": "",
+          "vendor": "redhat",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 381,
+          "purl": "pkg:redhat/openshift_container_platform",
+          "name": "openshift_container_platform",
+          "version": "",
+          "type": "",
+          "vendor": "redhat",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 380,
+          "purl": "pkg:redhat/directory_server",
+          "name": "directory_server",
+          "version": "",
+          "type": "",
+          "vendor": "redhat",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        }
+      ],
+      "total": 399,
+      "page": 1,
+      "pageSize": 20
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/components",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "items": [
+        {
+          "id": 520,
+          "purl": "pkg:maven/org.example/demo-2ea8c8db@1.0.0",
+          "name": "demo-2ea8c8db",
+          "version": "1.0.0",
+          "type": "maven",
+          "vendor": "org.example",
+          "license": null,
+          "revision": 1,
+          "updated_at": "2026-09-29 06:18:13"
+        }
+      ],
+      "total": 1,
+      "page": 1,
+      "pageSize": 20
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/components/520",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "id": 520,
+      "purl": "pkg:maven/org.example/demo-2ea8c8db@1.0.0",
+      "cpe": null,
+      "type": "maven",
+      "vendor": "org.example",
+      "name": "demo-2ea8c8db",
+      "version": "1.0.0",
+      "license": null,
+      "description": "录屏创建的 Maven 组件",
+      "repository": null,
+      "publish_date": null,
+      "language": null,
+      "record_time": null,
+      "revision": 1,
+      "created_at": "2026-09-29 06:18:13",
+      "updated_at": "2026-09-29 06:18:13"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/components/520",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "id": 520,
+      "purl": "pkg:maven/org.example/demo-2ea8c8db@1.0.0",
+      "cpe": null,
+      "type": "maven",
+      "vendor": "org.example",
+      "name": "demo-2ea8c8db",
+      "version": "1.0.0",
+      "license": null,
+      "description": "录屏创建的 Maven 组件",
+      "repository": null,
+      "publish_date": null,
+      "language": null,
+      "record_time": null,
+      "revision": 1,
+      "created_at": "2026-09-29 06:18:13",
+      "updated_at": "2026-09-29 06:18:13"
+    }
+  },
+  {
+    "method": "PATCH",
+    "path": "/api/components/520",
+    "status": 200,
+    "requestBody": "{\"purl\":\"pkg:maven/org.example/demo-2ea8c8db@1.0.0\",\"name\":\"demo-2ea8c8db\",\"version\":\"1.0.0\",\"type\":\"maven\",\"vendor\":\"org.example\",\"license\":null,\"description\":\"录屏修改：这条描述通过 HTTP PATCH 写入 MySQL\",\"repository\":null,\"language\":null,\"cpe\":null,\"publish_date\":null,\"record_time\":null,\"revision\":1}",
+    "response": {
+      "id": 520,
+      "purl": "pkg:maven/org.example/demo-2ea8c8db@1.0.0",
+      "cpe": null,
+      "type": "maven",
+      "vendor": "org.example",
+      "name": "demo-2ea8c8db",
+      "version": "1.0.0",
+      "license": null,
+      "description": "录屏修改：这条描述通过 HTTP PATCH 写入 MySQL",
+      "repository": null,
+      "publish_date": null,
+      "language": null,
+      "record_time": null,
+      "revision": 2,
+      "created_at": "2026-09-29 06:18:13",
+      "updated_at": "2026-09-29 06:18:17"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/components",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "items": [
+        {
+          "id": 520,
+          "purl": "pkg:maven/org.example/demo-2ea8c8db@1.0.0",
+          "name": "demo-2ea8c8db",
+          "version": "1.0.0",
+          "type": "maven",
+          "vendor": "org.example",
+          "license": null,
+          "revision": 2,
+          "updated_at": "2026-09-29 06:18:17"
+        }
+      ],
+      "total": 1,
+      "page": 1,
+      "pageSize": 20
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/components",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "items": [
+        {
+          "id": 520,
+          "purl": "pkg:maven/org.example/demo-2ea8c8db@1.0.0",
+          "name": "demo-2ea8c8db",
+          "version": "1.0.0",
+          "type": "maven",
+          "vendor": "org.example",
+          "license": null,
+          "revision": 2,
+          "updated_at": "2026-09-29 06:18:17"
+        },
+        {
+          "id": 398,
+          "purl": "pkg:xmlsoft/libxml2",
+          "name": "libxml2",
+          "version": "",
+          "type": "",
+          "vendor": "xmlsoft",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 397,
+          "purl": "pkg:x.org/x_server",
+          "name": "x_server",
+          "version": "",
+          "type": "",
+          "vendor": "x.org",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 396,
+          "purl": "pkg:wwbn/avideo",
+          "name": "avideo",
+          "version": "",
+          "type": "",
+          "vendor": "wwbn",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 395,
+          "purl": "pkg:wireshark/wireshark",
+          "name": "wireshark",
+          "version": "",
+          "type": "",
+          "vendor": "wireshark",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 394,
+          "purl": "pkg:webassembly/binaryen",
+          "name": "binaryen",
+          "version": "",
+          "type": "",
+          "vendor": "webassembly",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 393,
+          "purl": "pkg:university_of_cambridge/exim",
+          "name": "exim",
+          "version": "",
+          "type": "",
+          "vendor": "university_of_cambridge",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 392,
+          "purl": "pkg:typo3/typo3",
+          "name": "typo3",
+          "version": "",
+          "type": "",
+          "vendor": "typo3",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 391,
+          "purl": "pkg:tribe29/checkmk",
+          "name": "checkmk",
+          "version": "",
+          "type": "",
+          "vendor": "tribe29",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 390,
+          "purl": "pkg:trendmicro/apex_one",
+          "name": "apex_one",
+          "version": "",
+          "type": "",
+          "vendor": "trendmicro",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 389,
+          "purl": "pkg:snipeitapp/snipe-it",
+          "name": "snipe-it",
+          "version": "",
+          "type": "",
+          "vendor": "snipeitapp",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 388,
+          "purl": "pkg:smartertools/smartermail",
+          "name": "smartermail",
+          "version": "",
+          "type": "",
+          "vendor": "smartertools",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 387,
+          "purl": "pkg:sangoma/freepbx",
+          "name": "freepbx",
+          "version": "",
+          "type": "",
+          "vendor": "sangoma",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 386,
+          "purl": "pkg:samba/rsync",
+          "name": "rsync",
+          "version": "",
+          "type": "",
+          "vendor": "samba",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 385,
+          "purl": "pkg:sailpoint/identityiq",
+          "name": "identityiq",
+          "version": "",
+          "type": "",
+          "vendor": "sailpoint",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 384,
+          "purl": "pkg:rust-lang/cargo",
+          "name": "cargo",
+          "version": "",
+          "type": "",
+          "vendor": "rust-lang",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 383,
+          "purl": "pkg:redhat/satellite",
+          "name": "satellite",
+          "version": "",
+          "type": "",
+          "vendor": "redhat",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 382,
+          "purl": "pkg:redhat/quay",
+          "name": "quay",
+          "version": "",
+          "type": "",
+          "vendor": "redhat",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 381,
+          "purl": "pkg:redhat/openshift_container_platform",
+          "name": "openshift_container_platform",
+          "version": "",
+          "type": "",
+          "vendor": "redhat",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        },
+        {
+          "id": 380,
+          "purl": "pkg:redhat/directory_server",
+          "name": "directory_server",
+          "version": "",
+          "type": "",
+          "vendor": "redhat",
+          "license": "",
+          "revision": 1,
+          "updated_at": "2026-09-29 05:45:24"
+        }
+      ],
+      "total": 399,
+      "page": 1,
+      "pageSize": 20
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/health",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "status": "ok",
+      "database": "connected"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/stats",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "vulnerabilities": 1000,
+      "components": 399,
+      "highRisk": 507,
+      "operations": 4,
+      "severity": [
+        {
+          "label": "HIGH",
+          "count": 448
+        },
+        {
+          "label": "MEDIUM",
+          "count": 388
+        },
+        {
+          "label": "LOW",
+          "count": 105
+        },
+        {
+          "label": "CRITICAL",
+          "count": 59
+        }
+      ],
+      "ecosystems": [
+        {
+          "label": "github",
+          "count": 268
+        },
+        {
+          "label": "unknown",
+          "count": 107
+        },
+        {
+          "label": "generic",
+          "count": 8
+        },
+        {
+          "label": "composer",
+          "count": 6
+        },
+        {
+          "label": "npm",
+          "count": 5
+        },
+        {
+          "label": "cargo",
+          "count": 3
+        },
+        {
+          "label": "maven",
+          "count": 1
+        },
+        {
+          "label": "packagist",
+          "count": 1
+        }
+      ],
+      "recent": [
+        {
+          "id": 815,
+          "cve_id": "CVE-2026-49842",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "HIGH",
+          "source_publish_date": "2026-06-09 17:17:48"
+        },
+        {
+          "id": 814,
+          "cve_id": "CVE-2026-49843",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "MEDIUM",
+          "source_publish_date": "2026-06-09 17:17:48"
+        },
+        {
+          "id": 813,
+          "cve_id": "CVE-2026-49847",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "HIGH",
+          "source_publish_date": "2026-06-09 17:17:48"
+        },
+        {
+          "id": 812,
+          "cve_id": "CVE-2026-49848",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "MEDIUM",
+          "source_publish_date": "2026-06-09 17:17:48"
+        },
+        {
+          "id": 819,
+          "cve_id": "CVE-2026-49472",
+          "title": null,
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software",
+          "severity": "MEDIUM",
+          "source_publish_date": "2026-06-09 17:17:47"
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/components",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "items": [
+        {
+          "id": 520,
+          "purl": "pkg:maven/org.example/demo-2ea8c8db@1.0.0",
+          "name": "demo-2ea8c8db",
+          "version": "1.0.0",
+          "type": "maven",
+          "vendor": "org.example",
+          "license": null,
+          "revision": 2,
+          "updated_at": "2026-09-29 06:18:17"
+        }
+      ],
+      "total": 1,
+      "page": 1,
+      "pageSize": 20
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/health",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "status": "ok",
+      "database": "connected"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/health",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "status": "ok",
+      "database": "connected"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/health",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "status": "ok",
+      "database": "connected"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/health",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "status": "ok",
+      "database": "connected"
+    }
+  },
+  {
+    "method": "DELETE",
+    "path": "/api/components/520",
+    "status": 204,
+    "requestBody": null,
+    "response": null
+  },
+  {
+    "method": "GET",
+    "path": "/api/components",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "items": [],
+      "total": 0,
+      "page": 1,
+      "pageSize": 20
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/operation-logs",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "items": [
+        {
+          "id": 26,
+          "resource": "components",
+          "resource_id": 520,
+          "action": "delete",
+          "summary": "pkg:maven/org.example/demo-2ea8c8db@1.0.0",
+          "created_at": "2026-09-29 06:20:37"
+        },
+        {
+          "id": 25,
+          "resource": "components",
+          "resource_id": 520,
+          "action": "update",
+          "summary": "pkg:maven/org.example/demo-2ea8c8db@1.0.0",
+          "created_at": "2026-09-29 06:18:17"
+        },
+        {
+          "id": 24,
+          "resource": "components",
+          "resource_id": 520,
+          "action": "create",
+          "summary": "pkg:maven/org.example/demo-2ea8c8db@1.0.0",
+          "created_at": "2026-09-29 06:18:13"
+        },
+        {
+          "id": 23,
+          "resource": "vulnerabilities",
+          "resource_id": 1029,
+          "action": "delete",
+          "summary": "CVE-2099-1790662538045",
+          "created_at": "2026-09-29 06:17:08"
+        },
+        {
+          "id": 22,
+          "resource": "vulnerabilities",
+          "resource_id": 1029,
+          "action": "update",
+          "summary": "CVE-2099-1790662538045",
+          "created_at": "2026-09-29 06:17:03"
+        }
+      ],
+      "total": 5,
+      "page": 1,
+      "pageSize": 20
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/operation-logs/26",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "id": 26,
+      "resource": "components",
+      "resource_id": 520,
+      "action": "delete",
+      "summary": "pkg:maven/org.example/demo-2ea8c8db@1.0.0",
+      "before_data": {
+        "id": 520,
+        "cpe": null,
+        "name": "demo-2ea8c8db",
+        "purl": "pkg:maven/org.example/demo-2ea8c8db@1.0.0",
+        "type": "maven",
+        "vendor": "org.example",
+        "license": null,
+        "version": "1.0.0",
+        "language": null,
+        "revision": 2,
+        "created_at": "2026-09-29 06:18:13",
+        "repository": null,
+        "updated_at": "2026-09-29 06:18:17",
+        "description": "录屏修改：这条描述通过 HTTP PATCH 写入 MySQL",
+        "record_time": null,
+        "publish_date": null
+      },
+      "after_data": null,
+      "created_at": "2026-09-29 06:20:37"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/health",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "status": "ok",
+      "database": "connected"
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/api/health",
+    "status": 200,
+    "requestBody": null,
+    "response": {
+      "status": "ok",
+      "database": "connected"
+    }
+  }
+]
