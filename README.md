@@ -53,8 +53,8 @@
 在仓库根目录执行：
 
 ```sh
-# 首次创建配置；已有 .env 时不要覆盖
-cp .env.example .env
+# 首次创建配置；脚本随机生成两个数据库口令，已有 .env 时不会覆盖
+sh docker/setup-env.sh
 
 # 构建镜像、启动 MySQL 和前后端
 # 首次自动安装依赖、建表并导入教师数据
@@ -155,14 +155,14 @@ ssh -N -o ExitOnForwardFailure=yes -L 15173:127.0.0.1:5173 -L 13000:127.0.0.1:30
 
 ## 7. 配置说明
 
-`.env` 被 Git 忽略；示例口令只用于本地开发，不是任何真实服务凭据。
+`.env` 被 Git 忽略；初始化脚本为应用账号和数据库管理员生成不同的随机口令。`.env.example` 只列配置键，不包含可用口令。不要把 `.env`、`docker compose config` 的完整输出或含密码的日志上传、截图或加入提交包。
 
 | 配置 | 默认 | 说明 |
 | --- | --- | --- |
 | MYSQL_DATABASE | webdev | 数据库名 |
 | MYSQL_USER | webdev | 应用账号 |
-| MYSQL_PASSWORD | 示例开发口令 | 应用账号口令 |
-| MYSQL_ROOT_PASSWORD | 示例开发口令 | 数据库管理员口令 |
+| MYSQL_PASSWORD | 无固定默认值，首次生成 | 应用账号口令；缺失时 Compose 拒绝启动 |
+| MYSQL_ROOT_PASSWORD | 无固定默认值，首次生成 | 数据库管理员口令；缺失时 Compose 拒绝启动 |
 | DB_PORT | 3307 | host 网络 MySQL 监听端口 |
 | API_PORT | 3000 | 后端监听端口 |
 | FRONTEND_PORT | 5173 | 前端端口；修改后 SSH 转发同步修改 |
@@ -171,6 +171,8 @@ ssh -N -o ExitOnForwardFailure=yes -L 15173:127.0.0.1:5173 -L 13000:127.0.0.1:30
 配置变化后执行 `docker compose up -d` 重建相关容器。host 网络下不能重复占用宿主机端口；Vite 使用 strictPort，端口冲突会明确失败。
 
 已初始化 MySQL 的用户名和口令保存在数据卷里，修改环境变量不会自动修改数据库账号。应通过数据库管理操作同步修改；不要为了换口令删除业务数据。
+
+当前服务器需要轮换旧口令时，可在仓库根目录运行 `python3 docker/rotate-local-passwords.py`。脚本通过数据库连接更改应用和 root 账号口令，更新 Git 忽略的 `.env`，并重建两个容器；不会显示新旧口令。执行前确认没有其他人正在编辑数据，运行后检查 `docker compose ps`。这是主机上的配置管理操作；前后端安装、运行和测试仍在 Docker 内进行。
 
 ## 8. 数据库与可重复初始化
 
@@ -322,6 +324,8 @@ docker compose exec app node tests/persistence-fixture.mjs cleanup
 ## 12. 提交材料
 
 提交源代码、package-lock.json、Compose/Dockerfile、数据库脚本、README、[实验报告](docs/实验报告.md)及[演示材料](docs/演示说明.md)。不提交 `.env`、node_modules、构建缓存或 tmp/。真实密码、令牌和密钥不得加入仓库。
+
+提交前可在仓库根目录运行 `python3 scripts/package_submission.py`，生成 `submission/实践作业一-提交包.zip` 和对应的 SHA-256 校验文件。脚本只收录审查过的项目文件，并拒绝把当前有效数据库口令、私钥或令牌放入压缩包。[本次复验记录](docs/复验记录-2026-10-08.md)列出最新检查结果。
 
 实验报告记录了本次实现的决策、AI 提示与验证过程；提交者应阅读关键代码并补充本人信息、实际演示形式和自己的学习总结，确保能解释一次请求从表单到数据库的完整过程。
 

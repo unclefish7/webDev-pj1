@@ -3,3 +3,6 @@ dist/
 .env
 *.log
 tmp/
+submission/
+*.zip
+__pycache__/
